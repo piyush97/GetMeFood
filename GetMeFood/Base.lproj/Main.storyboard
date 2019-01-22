@@ -175,6 +175,9 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="UDz-1V-Dsp" secondAttribute="trailing" id="rqJ-N2-wLk"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="CXA-Lb-zrc" kind="show" id="YbU-NK-eKG"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -208,6 +211,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bOn-KY-vJR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="656.79999999999995" y="68.815592203898049"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="Ntc-aZ-Jyj">
+            <objects>
+                <viewController id="CXA-Lb-zrc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="quc-Lb-Wyr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="P6u-DB-CfN"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" largeTitleDisplayMode="never" id="2Ca-rc-5P3"/>
+                    <size key="freeformSize" width="375" height="1024"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zgv-UH-Exe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2150" y="69"/>
         </scene>
     </scenes>
     <resources>
