@@ -223,6 +223,11 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XHR-66-cfo">
                                 <rect key="frame" x="0.0" y="64" width="375" height="960"/>
                                 <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YSG-FJ-Asc">
+                                        <rect key="frame" x="67" y="416" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="f5G-r8-Fu1">
                                         <rect key="frame" x="8" y="8" width="375" height="956"/>
                                         <subviews>
@@ -350,6 +355,7 @@
                                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="200" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="1as-wx-CyQ">
                                                 <rect key="frame" x="0.0" y="354" width="375" height="602"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="960" id="8gO-Jf-Jrq"/>
                                                     <constraint firstAttribute="height" constant="250" id="Z2b-NR-gpw"/>
                                                 </constraints>
                                             </mapView>
