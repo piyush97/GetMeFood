@@ -13,6 +13,7 @@
 		0D0BDF4A21F781E4001F8D9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D0BDF4921F781E4001F8D9F /* Assets.xcassets */; };
 		0D0BDF4D21F781E4001F8D9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D0BDF4B21F781E4001F8D9F /* LaunchScreen.storyboard */; };
 		0D0BDF5621F7ABD8001F8D9F /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0BDF5521F7ABD8001F8D9F /* BaseView.swift */; };
+		0D0BDF5A21F7AD2F001F8D9F /* DetailsFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0BDF5921F7AD2F001F8D9F /* DetailsFoodView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0D0BDF4C21F781E4001F8D9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D0BDF4E21F781E4001F8D9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D0BDF5521F7ABD8001F8D9F /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		0D0BDF5921F7AD2F001F8D9F /* DetailsFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsFoodView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,9 +72,26 @@
 		0D0BDF5421F7ABBF001F8D9F /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				0D0BDF5721F7AD08001F8D9F /* Details */,
 				0D0BDF5521F7ABD8001F8D9F /* BaseView.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		0D0BDF5721F7AD08001F8D9F /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				0D0BDF5821F7AD1C001F8D9F /* Views */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		0D0BDF5821F7AD1C001F8D9F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D0BDF5921F7AD2F001F8D9F /* DetailsFoodView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D0BDF5621F7ABD8001F8D9F /* BaseView.swift in Sources */,
+				0D0BDF5A21F7AD2F001F8D9F /* DetailsFoodView.swift in Sources */,
 				0D0BDF4521F781E2001F8D9F /* ViewController.swift in Sources */,
 				0D0BDF4321F781E2001F8D9F /* AppDelegate.swift in Sources */,
 			);
