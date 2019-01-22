@@ -103,7 +103,7 @@
             </objects>
             <point key="canvasLocation" x="5.5999999999999996" y="68.815592203898049"/>
         </scene>
-        <!--Resturaunts -->
+        <!--Restaurants -->
         <scene sceneID="oT5-1K-BBK">
             <objects>
                 <tableViewController id="oUV-ef-Zza" sceneMemberID="viewController">
@@ -112,12 +112,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="187" id="8Ks-ql-LUJ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RestaurantCell" rowHeight="187" id="8Ks-ql-LUJ">
                                 <rect key="frame" x="0.0" y="28" width="375" height="187"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8Ks-ql-LUJ" id="6Y6-uh-VGr">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="186.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UDz-1V-Dsp">
+                                            <rect key="frame" x="16" y="11" width="343" height="165"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FJC-1I-x61">
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="84"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="UDz-1V-Dsp" secondAttribute="bottom" id="4FZ-qx-F9j"/>
+                                        <constraint firstItem="UDz-1V-Dsp" firstAttribute="top" secondItem="6Y6-uh-VGr" secondAttribute="topMargin" id="CXe-2a-tAK"/>
+                                        <constraint firstItem="UDz-1V-Dsp" firstAttribute="leading" secondItem="6Y6-uh-VGr" secondAttribute="leadingMargin" id="qGO-Df-ZZs"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="UDz-1V-Dsp" secondAttribute="trailing" id="rqJ-N2-wLk"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -126,7 +144,7 @@
                             <outlet property="delegate" destination="oUV-ef-Zza" id="jMw-zb-Qeh"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Resturaunts " id="UaE-zg-TgJ"/>
+                    <navigationItem key="navigationItem" title="Restaurants " id="UaE-zg-TgJ"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1g8-mA-QiC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
